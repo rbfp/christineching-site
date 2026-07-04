@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Christine Ching</title>
+  <meta name="description" content="Christine Ching — professional portfolio and bio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <style>
+    :root {
+      --bg: #fbfaf8;
+      --ink: #1a1a1a;
+      --muted: #6b6b6b;
+      --accent: #9a7b4f;
+      --line: #e7e3dc;
+      --card: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14130f;
+        --ink: #f3efe8;
+        --muted: #a9a396;
+        --accent: #cba86a;
+        --line: #2a2822;
+        --card: #1c1a15;
+      }
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-serif, Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+    header {
+      padding: 96px 0 64px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      font-size: 12px;
+      color: var(--accent);
+      margin: 0 0 18px;
+    }
+    h1 {
+      font-size: clamp(40px, 8vw, 68px);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+    .lede {
+      font-size: clamp(18px, 3vw, 22px);
+      color: var(--muted);
+      max-width: 34ch;
+      margin: 0;
+    }
+    section { padding: 56px 0; border-bottom: 1px solid var(--line); }
+    h2 {
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 24px;
+      font-weight: 600;
+    }
+    p { margin: 0 0 18px; }
+    .work-grid { display: grid; gap: 18px; }
+    .work-item {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 22px 24px;
+    }
+    .work-item h3 { margin: 0 0 6px; font-size: 20px; font-weight: 500; }
+    .work-item p { margin: 0; color: var(--muted); font-size: 16px; }
+    .contact a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: color 0.15s;
+    }
+    .contact a:hover { color: var(--accent); }
+    footer {
+      padding: 40px 0 64px;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Portfolio &middot; Bio</p>
+      <h1>Christine&nbsp;Ching</h1>
+      <p class="lede">A short, memorable tagline goes here — what you do and who you do it for.</p>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>This is a placeholder bio. Replace it with two or three sentences in Christine's voice — background, what she's known for, and what she's focused on now. Keep it warm and specific.</p>
+        <p>A second short paragraph can add credibility: notable roles, areas of expertise, or a signature project.</p>
+      </section>
+
+      <section id="work">
+        <h2>Selected Work</h2>
+        <div class="work-grid">
+          <div class="work-item">
+            <h3>Project or role one</h3>
+            <p>One line describing the work and the outcome.</p>
+          </div>
+          <div class="work-item">
+            <h3>Project or role two</h3>
+            <p>One line describing the work and the outcome.</p>
+          </div>
+          <div class="work-item">
+            <h3>Project or role three</h3>
+            <p>One line describing the work and the outcome.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@christineching.com">hello@christineching.com</a></p>
+        <p>LinkedIn: <a href="#">add link</a></p>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year">2026</span> Christine Ching. All rights reserved.
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
